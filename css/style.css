@@ -1,0 +1,42 @@
+body {
+    background-color:rgb(226, 238, 238);
+    text-align: center;
+    color:#7d9799;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    justify-content: center;
+}
+nav {
+    background-color: #aec3c5;
+    background-image: linear-gradient(to right, #cadce0, #a5bcc2, #c0d3d8)
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+nav a {
+    color: rgb(115, 133, 136);
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+nav a:hover {
+    background-color: #9bb4ba;
+}
+nav a.active {
+    background-color: #9cb4b9;
+    font-weight: bold;
+}
+button {
+    background-color:#a5bcc2;
+    padding: 15px;
+}
+
+#anim1:checked ~ .anim1-content {
+    display: block; 
+}
+.anim1-content {
+    display: none; 
+}
