@@ -32,11 +32,69 @@ nav a.active {
 button {
     background-color:#a5bcc2;
     padding: 15px;
+    border-radius:10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-color:#7d9799;
 }
-
+footer {
+    padding:50px;
+}
+.container {
+    background-color:#c0d3d8;
+    border-radius:20px;
+    padding:30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+img {
+    border-radius: 15px;
+    border-style:solid;
+    border-width:5px;
+    border-color:#7d9799;
+}
 #anim1:checked ~ .anim1-content {
     display: block; 
 }
 .anim1-content {
     display: none; 
+}
+.scroll-obj {
+  animation: fadeIn linear;
+  animation-timeline: view();
+  animation-range: entry 15% cover 50%;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#img {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+    max-width: 400px;
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+}
+#img.visible {
+    opacity: 1;
+}
+.anim2 {
+  animation-name: anim2;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+@keyframes anim2 {
+  0%   {background-color: #a5bcc2;}
+  20%  {background-color: #b5c2a5;}
+  40%  {background-color: #c2b9a5;}
+  60% {background-color: #c2a5c2;}
+  80% {background-color: #a6a5c2;}
+  100% {background-color: #a5bcc2;}
 }
